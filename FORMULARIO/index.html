@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pagina de pruebas</title>
+        <meta charset="uft-8">
+        <link rel="stylesheet" type= "text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+
+        <h1 id="title">FORMULARIO DE ENCUESTA</h1>
+        <p id="description">Describe que sistema operativo te parece mas facil de usar</p>
+
+
+        <form id="survey-form" action="" method="post">
+            <label id="name-label">
+                Nombre
+                <input type="text" id="name" placeholder="Ingrese su Nombre" required>
+            </label>
+
+            <label id="email-label">
+                Email
+                <input type="email" id="email" placeholder="Ingrese su Email" required>
+            </label>
+
+            <label id="number-label">
+                Edad
+                <input type="number" id="number" min="10" max="99" placeholder="Ingrese su edad" >
+            </label>
+
+            
+            <select id="dropdown" name="OS">
+                <option selected value="0"> Elige una opción </option>
+                <optgroup label="Microsoft"> 
+                <option value="2">Windows 7</option> 
+                <option value="3">Windows XP</option>
+                <option value="10">Windows 8</option> 
+                <option value="11">Windows 10</option> 
+                <option value="12">Windows 11</option> 
+            </select>
+            <hr>
+            <h4>Facilidad de uso</h4>
+            
+            <label class="label-radio">
+                <input type="radio"  name="name" value="1">
+                Facil
+            </label>
+            <label  class="label-radio">
+                <input type="radio" name="name" value="2">
+                Medio
+            </label>
+            <label  class="label-radio">
+                <input type="radio" name="name" value="3">
+                Dicifil
+            </label>
+            <hr>
+            <h4>Cuanto lo recomendarias</h4>
+            
+            <label class="label-checkbox">
+                <input type="checkbox"  name="name" value="1">
+                No lo recomendaria.
+            </label>
+            <label class="label-checkbox"-radio>
+                <input type="checkbox" name="name" value="2">
+                Le comentaria a algunos amigos.
+            </label>
+            <label class="label-checkbox"-radio>
+                <input type="checkbox" name="name" value="3">
+                Si, lo recomiendo.
+            </label class="label"-radio>
+            <hr>
+            <h4>Algun comentario extra</h4>
+            
+            <textarea id="textarea" name="textarea" placeholder="Escriba aca su comentario"></textarea>
+
+
+            <input id="submit" type="submit" />
+        </form>
+      
+    
+    </body>
+</html>
